@@ -10,3 +10,30 @@
     text-decoration: none;
     /* Optional: Remove underline on hover */
 }
+
+.experience-logo {
+    border-radius: 8px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-item {
+    width: 100%;
+    max-width: 800px;
+}
+
+.experience-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
