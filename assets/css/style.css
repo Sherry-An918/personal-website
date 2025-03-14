@@ -1,0 +1,12 @@
+/* Underline the link */
+.underlined-link {
+    text-decoration: underline;
+    /* Add underline */
+    transition: color 0.2s ease;
+    /* Smooth color transition on hover */
+}
+
+.underlined-link:hover {
+    text-decoration: none;
+    /* Optional: Remove underline on hover */
+}
