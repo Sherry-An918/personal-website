@@ -1,14 +1,10 @@
-/* Underline the link */
 .underlined-link {
     text-decoration: underline;
-    /* Add underline */
     transition: color 0.2s ease;
-    /* Smooth color transition on hover */
 }
 
 .underlined-link:hover {
     text-decoration: none;
-    /* Optional: Remove underline on hover */
 }
 
 .experience-logo {
@@ -36,4 +32,25 @@
 .experience-list {
     list-style-type: disc;
     padding-left: 20px;
+}
+
+.tech-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: hsl(204, 69%, 81%);
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #000000;
+    border: 1px solid #ddd;
+}
+
+.tech-pills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.github-icon {
+    font-size: 24px;
+    color: #333;
 }
