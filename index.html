@@ -17,6 +17,7 @@
     <!-- Javascript-->
     <script src="./assets/scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/f16049628c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
@@ -37,10 +38,10 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item" href="#skills" data-scroll>
                     Skills
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="#education" data-scroll>
                     Education
                 </a>
                 <a class="navbar-item">
@@ -93,7 +94,7 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="section">
+    <section id="skills" class="section" id="skills">
         <div class="container">
             <h2 class="title is-2 has-text-centered mb-6">Skills</h2>
             <div class="columns is-multiline">
@@ -240,6 +241,63 @@
             </div>
         </div>
     </section>
+
+    <section id="education" class="section" id="education">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6">Education</h2>
+            <div class="columns is-multiline">
+                <!-- University College Dublin -->
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-content">
+                            <!-- Media Object for Logo and Text -->
+                            <div class="media">
+                                <!-- Logo -->
+                                <div class="media-left mt-1">
+                                    <figure class="image is-64x64">
+                                        <img src="assets/images/ucd.svg" alt="University College Dublin Logo">
+                                    </figure>
+                                </div>
+                                <!-- Text Content -->
+                                <div class="media-content">
+                                    <h3 class="title is-4 mb-2">University College Dublin</h3>
+                                    <p class="subtitle is-6">MSc Information Systems (2:1)</p>
+                                    <p class="has-text-grey">Dublin, Ireland</p>
+                                    <p class="has-text-grey">Sep 2023 – Dec 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Xi’an University of Architecture and Technology -->
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-content">
+                            <!-- Media Object for Logo and Text -->
+                            <div class="media">
+                                <!-- Logo -->
+                                <div class="media-left mt-1">
+                                    <figure class="image is-64x64">
+                                        <img src="assets/images/xauat.jpg"
+                                            alt="Xi’an University of Architecture and Technology Logo">
+                                    </figure>
+                                </div>
+                                <!-- Text Content -->
+                                <div class="media-content">
+                                    <h3 class="title is-4 mb-2">Xi’an University of Architecture and Technology</h3>
+                                    <p class="subtitle is-6">BEng Landscape Architecture</p>
+                                    <p class="has-text-grey">Xi’an, China</p>
+                                    <p class="has-text-grey">Sep 2018 – Jul 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section">
         <div class="container">
             <h2 class="title is-2">Contact Me</h2>
@@ -251,6 +309,9 @@
         <div class="content has-text-centered">
             <p>&copy; 2025 Annie. All rights reserved.</p>
         </div>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
     </footer>
 </body>
 
