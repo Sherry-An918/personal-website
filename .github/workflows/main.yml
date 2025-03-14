@@ -23,3 +23,7 @@ jobs:
     - name: Deploy to S3
       run: |
         aws s3 sync . s3://annie-personal-website --delete
+
+    - name: Invalidate CloudFront cache
+      run: |
+        aws cloudfront create-invalidation --distribution-id E2HD2IDXH8IKDP --paths "/*"
