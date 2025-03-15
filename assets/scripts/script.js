@@ -55,5 +55,3 @@ async function initializeVisitorCount() {
     document.getElementById('visitor-count').textContent = "Error loading count";
   }
 }
-
-initializeVisitorCount();
