@@ -42,6 +42,11 @@ async function fetchVisitorCount() {
   }
 }
 
+function updateVisitorCount(visitorCount) {
+  const visitorCountElement = document.getElementById('visitor-count');
+  visitorCountElement.textContent = visitorCount;
+}
+
 async function initializeVisitorCount() {
   const data = await fetchVisitorCount();
   if (data) {
@@ -50,3 +55,5 @@ async function initializeVisitorCount() {
     document.getElementById('visitor-count').textContent = "Error loading count";
   }
 }
+
+initializeVisitorCount();
