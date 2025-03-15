@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'visitor-count/**'
+      - '.github/workflows/lambda_deploy.yml'
 
 jobs:
   deploy:
