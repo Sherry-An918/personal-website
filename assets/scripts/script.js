@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchVisitorCount() {
   try {
-    const response = await fetch('https://g5u5d33czi.execute-api.eu-west-1.amazonaws.com/visitor-count', {
+    const response = await fetch('https://api.nisirui.com/visitor-count', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
