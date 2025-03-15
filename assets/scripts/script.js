@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  initializeVisitorCount();
 });
 
 async function fetchVisitorCount() {
@@ -49,5 +50,3 @@ async function initializeVisitorCount() {
     document.getElementById('visitor-count').textContent = "Error loading count";
   }
 }
-
-initializeVisitorCount();
