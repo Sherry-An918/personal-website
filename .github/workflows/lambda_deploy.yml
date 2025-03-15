@@ -29,10 +29,12 @@ jobs:
 
       - name: Zip Lambda function code
         run: |
-            zip -r function.zip visitor-count/*  # Adjust the path to your Lambda function code
-  
+          cd visitor-count  # Navigate to the visitor-count folder
+          zip function.zip lambda_function.py  # Zip only the lambda_function.py file
+          mv function.zip ../  # Move the zip file to the root directory
+
       - name: Deploy Lambda function
         run: |
-            aws lambda update-function-code \
-              --function-name visitorCountLambda \
-              --zip-file fileb://function.zip
+          aws lambda update-function-code \
+            --function-name visitorCountLambda \
+            --zip-file fileb://function.zip
